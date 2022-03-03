@@ -1,0 +1,34 @@
+.user-profile > .card {
+  width: 45%;
+}
+.user-profile > .card > .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+.user-profile > .avatar-block {
+  max-width: 50%;
+  min-width: 200px;
+  height: 200px;
+}
+.user-profile > .avatar-block > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .user-profile {
+    flex-wrap: wrap-reverse;
+    gap: 35px;
+  }
+  .user-profile > .card {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .user-profile > .avatar-block {
+    max-width: 80%;
+  }
+}

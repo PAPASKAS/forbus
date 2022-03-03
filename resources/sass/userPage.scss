@@ -1,0 +1,40 @@
+@import "variable";
+
+.user-profile {
+    > .card {
+        width: 45%;
+    }
+    > .card > .card-body {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:40px;
+    }
+
+    > .avatar-block {
+        max-width: 50%;
+        min-width:200px;
+        height:200px;
+
+        > img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    @media(max-width: $lg) {
+        flex-wrap:wrap-reverse;
+        gap: 35px;
+
+        > .card {
+            width: 100%;
+        }
+    }
+
+    @media(max-width: $md) {
+        > .avatar-block {
+            max-width:80%;
+        }
+    }
+}

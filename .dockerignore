@@ -1,0 +1,8 @@
+.idea
+.vs
+prepros.config
+/node_modules
+/vendor/*
+!vendor/laravel/
+/storage/app/public/img/avatars
+
