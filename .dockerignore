@@ -5,4 +5,5 @@ prepros.config
 /vendor/*
 !vendor/laravel/
 /storage/app/public/img/avatars
+/public/storage
 
